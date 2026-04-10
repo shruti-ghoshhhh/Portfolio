@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Ghosh | Full Stack Developer</title>
+
+    <!-- Google Fonts: Inter for body, Fira Code for monospace -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">Portfolio<span>.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#training">TRAINING</a></li>
+                <li><a href="#certifications">CERTIFICATES</a></li>
+                <li><a href="#achievements">ACHIEVEMENTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+
+                <div class="hero-text-wrap">
+                    <p class="greeting">Hi, my name is</p>
+                    <h1 class="name">Shruti Ghosh.</h1>
+                    <div class="role-container">
+                        <h2 class="role"><span id="typewriter">Aspiring Software Developer.</span></h2>
+                    </div>
+                    <p class="bio">
+                        I solve real-world problems through scalable full-stack development, backed by strong
+                        problem-solving skills.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="https://docs.google.com/document/d/1V9cXlLoGl2RGZ7JgZ7rXaOpb673ovbJyGa9aRUyVDBU/edit?tab=t.0#heading=h.n1tqwrn62506"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Resume ↗</a>
+                    </div>
+                </div>
+
+                <div class="hero-terminal-wrap">
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="title">shruti@portfolio:~</span>
+                        </div>
+                        <div class="terminal-body" id="terminal-body"
+                            onclick="document.getElementById('terminal-input').focus()">
+                            <div id="terminal-history">
+                                <!-- Command outputs append here dynamically via JS -->
+                            </div>
+                            <div class="terminal-input-line">
+                                <span class="prompt">shruti@portfolio:~$</span>
+                                <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" autofocus>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section fade-in-section">
+            <h3 class="section-title">About Me</h3>
+            <div class="section-content about-content">
+                <div class="glass-panel about-text">
+                    <p>Hi, I’m Shruti Ghosh, a Computer Science Engineering student focused on solving real-world
+                        problems by building innovative and scalable software solutions.</p>
+                    <br>
+                    <p>I develop full-stack web applications with an emphasis on performance, scalability, and
+                        meaningful user experiences. My experience includes working with the MERN stack and integrating
+                        technologies like the Gemini API and Leaflet.js to build solutions involving AI and geospatial
+                        data.</p>
+                    <br>
+                    <p>I actively strengthen my problem-solving skills through Data Structures and Algorithms, having
+                        solved 300+ problems on LeetCode, which helps me approach development with an
+                        optimization-focused mindset.</p>
+                    <br>
+                    <p>I’m particularly interested in building tech solutions aligned with Sustainable Development Goals
+                        (SDGs), aiming to create real-world impact through technology.</p>
+                    <br>
+                    <p><strong>Currently exploring:</strong> Advanced DSA, Low-Level Design, and scalable system
+                        architectures.</p>
+                    <br>
+                    <p>My goal is to grow into a software engineer who prioritizes innovation and builds efficient,
+                        scalable, and meaningful products.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section fade-in-section">
+            <h3 class="section-title">Skills</h3>
+            <div class="section-content">
+                <div class="skills-grid fixed-columns">
+                    <div class="glass-panel skill-card">
+                        <h4>Languages</h4>
+                        <ul class="styled-list">
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>SQL</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    <div class="glass-panel skill-card">
+                        <h4>Frameworks</h4>
+                        <ul class="styled-list">
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Socket.io</li>
+                            <li>Tailwind CSS</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                    <div class="glass-panel skill-card">
+                        <h4>Tools</h4>
+                        <ul class="styled-list">
+                            <li>MongoDB / Mongoose</li>
+                            <li>Git / GitHub</li>
+                            <li>Postman</li>
+                            <li>Vercel / Render</li>
+                            <li>Netlify</li>
+                        </ul>
+                    </div>
+                    <div class="glass-panel skill-card">
+                        <h4>AI/GeoSpatial</h4>
+                        <ul class="styled-list">
+                            <li>Groq API</li>
+                            <li>Gemini API</li>
+                            <li>Leaflet.js</li>
+                            <li>Streamlit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section fade-in-section">
+            <h3 class="section-title">Featured Projects</h3>
+            <div class="section-content featured-projects-container">
+
+                <div class="project-featured">
+                    <div class="project-image">
+                        <div class="img-placeholder">
+                            <img src="assets/ecoroute dashboard.png" alt="EcoRoute Dashboard">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h4 class="project-title">EcoRoute</h4>
+                        <div class="glass-panel project-desc-box">
+                            <p>Centralized waste management system utilizing Leaflet.js for real-time hotspot
+                                visualization. Architected EcoBot, an AI-driven consultant for sustainable disposal
+                                guidance, backed by a gamified MongoDB reward system.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>MongoDB</li>
+                            <li>Express.js</li>
+                            <li>Leaflet.js</li>
+                            <li>Gemini API</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/shruti-ghoshhhh/EcoRoute" title="GitHub">GitHub ↗</a>
+                            <a href="#" title="Live Link">Live Demo ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-featured">
+                    <div class="project-image">
+                        <div class="img-placeholder">
+                            <img src="assets/agrismart_dashboard.png" alt="AgriSmart Dashboard">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h4 class="project-title">AgriSmart</h4>
+                        <div class="glass-panel project-desc-box">
+                            <p>Spearheaded a dual-portal P2P marketplace using the MERN stack, connecting producers and consumers while eliminating intermediaries via JWT and OAuth authentication. Engineered a <strong style="color: var(--accent-color);">real-time Auction Engine</strong> with Socket.io, supporting 50+ concurrent bids with live price updates and transparent price discovery.</p>
+                            <br>
+                            <p>Leveraged the Groq API to build “AgriPlanner,” delivering fair price insights, crop recommendations for improved decision-making. Orchestrated role-based dashboards with analytics (cost savings, auction activity, carbon impact) and automated pricing for perishable goods to minimize waste.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>MERN Stack</li>
+                            <li>Socket.io</li>
+                            <li>JWT / OAuth</li>
+                            <li>Groq API</li>
+                            <li>Leaflet.js</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/shruti-ghoshhhh/AgriSmart" title="GitHub">GitHub ↗</a>
+                            <a href="#" title="Live Link">Live Demo ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education & Timeline Section -->
+        <section id="education" class="section fade-in-section">
+            <h3 class="section-title">Journey & Education</h3>
+            <div class="section-content timeline-container">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-panel timeline-content">
+                        <span class="timeline-date">Apr 2024 - Nov 2024</span>
+                        <h4>Freelance Developer</h4>
+                        <p class="timeline-subtitle">Lovely Stores DEL</p>
+                        <p>Streamlined business operations by digitizing physical records into a full-stack inventory
+                            management system using PHP and MySQL.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-panel timeline-content">
+                        <span class="timeline-date">Aug 2023 - Present</span>
+                        <h4>B.Tech in Computer Science and Engineering</h4>
+                        <p class="timeline-subtitle">Lovely Professional University | CGPA: 7.97</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-panel timeline-content">
+                        <span class="timeline-date">Apr 2021 - Mar 2023</span>
+                        <h4>ISC (Class XII)</h4>
+                        <p class="timeline-subtitle">St. Stephen’s School | Percentage: 82%</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Training Section -->
+        <section id="training" class="section fade-in-section">
+            <h3 class="section-title">Training</h3>
+            <div class="section-content training-container">
+                <div class="glass-panel training-card">
+
+                    <div class="training-img-wrap">
+                        <div class="achievement-img-box">
+                            <img src="assets/dsa%20cipherschools%20training%20and%20cert.jpg"
+                                alt="CipherSchools Training">
+                        </div>
+                    </div>
+
+                    <div class="training-text-wrap">
+                        <h4>Data Structures and Algorithms</h4>
+                        <p class="timeline-subtitle">Cipher Schools</p>
+                        <span class="timeline-date" style="display:block; margin-bottom: 15px;">June 2025 - July
+                            2025</span>
+                        <p
+                            style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); text-align: left;">
+                            Completed Data Structures and Algorithms training from CipherSchools, applying the concepts
+                            by solving hundreds of problems on LeetCode and GeeksforGeeks to strengthen problem-solving
+                            and optimization skills.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section fade-in-section">
+            <h3 class="section-title">Certifications</h3>
+            <div class="slider-wrapper">
+                <button class="scroll-btn left-btn">←</button>
+                <div class="achievements-grid">
+
+                    <a href="https://www.cipherschools.com/certificate/preview?id=6881d424ca64e035786b15d4"
+                        target="_blank" rel="noopener noreferrer" class="achievement-card glass-panel">
+                        <div class="achievement-img-box">
+                            <img src="assets/dsa%20cipherschools%20training%20and%20cert.jpg" alt="DSA in Java">
+                        </div>
+                        <div class="achievement-icon">📜</div>
+                        <h4 class="achievement-title">DSA in Java</h4>
+                        <p class="achievement-desc">CipherSchools Certification</p>
+                    </a>
+
+                    <a href="https://lpucolab438.examly.io/certificate/U2FsdGVkX1%2BWE7ABK%2Blt7fl6YjQzSkgXCFx8aU5cFDY%3D"
+                        target="_blank" rel="noopener noreferrer" class="achievement-card glass-panel">
+                        <div class="achievement-img-box">
+                            <img src="assets/java%20neocolab.png" alt="Java Excellence">
+                        </div>
+                        <div class="achievement-icon">📜</div>
+                        <h4 class="achievement-title">Java Excellence</h4>
+                        <p class="achievement-desc">NeoColab Certification</p>
+                    </a>
+
+                    <a href="https://www.freecodecamp.org/certification/fcc8d69b8f2-a972-45bb-be2d-b8a6b2e2f5ed/responsive-web-design"
+                        target="_blank" rel="noopener noreferrer" class="achievement-card glass-panel">
+                        <div class="achievement-img-box">
+                            <img src="assets/resposive%20web%20design.png" alt="Responsive Design">
+                        </div>
+                        <div class="achievement-icon">🎨</div>
+                        <h4 class="achievement-title">Responsive Design</h4>
+                        <p class="achievement-desc">FreeCodeCamp Certification</p>
+                    </a>
+
+                </div>
+                <button class="scroll-btn right-btn">→</button>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section fade-in-section">
+            <h3 class="section-title">Achievements</h3>
+            <div class="slider-wrapper">
+                <button class="scroll-btn left-btn">←</button>
+                <div class="achievements-grid">
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-img-box" id="leetcode-img-box">
+                            <img src="https://leetcard.jacoblin.cool/shrutighoshh?theme=dark&font=Inter&ext=activity"
+                                alt="LeetCode Stats">
+                        </div>
+                        <div class="achievement-icon">🚀</div>
+                        <h4 class="achievement-title" id="leetcode-title">300+ LeetCode</h4>
+                        <p class="achievement-desc">Problems solved focusing on core Optimization.</p>
+                    </div>
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-img-box">
+                            <img src="assets/thought%20mingle%20forum.jpg" alt="Thought Mingle">
+                        </div>
+                        <div class="achievement-icon">🥇</div>
+                        <h4 class="achievement-title">Thought Mingle Forum</h4>
+                        <p class="achievement-desc">Winner - A Competitive Event.</p>
+                    </div>
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-img-box">
+                            <img src="assets/tech%20talkdown.jpeg" alt="Tech Talkdown">
+                        </div>
+                        <div class="achievement-icon">🥈</div>
+                        <h4 class="achievement-title">Tech Talkdown</h4>
+                        <p class="achievement-desc">First Runner Up - A Debate Competition.</p>
+                    </div>
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-img-box">
+                            <img src="assets/intellect%20exchange.jpeg" alt="Intellect Exchange">
+                        </div>
+                        <div class="achievement-icon">🥉</div>
+                        <h4 class="achievement-title">Intellect Exchange</h4>
+                        <p class="achievement-desc">Second Runner Up - Group Discussion.</p>
+                    </div>
+
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-img-box">
+                            <img src="assets/mindsin%20motion.jpg" alt="Minds in Motion">
+                        </div>
+                        <div class="achievement-icon">🥉</div>
+                        <h4 class="achievement-title">Minds in Motion</h4>
+                        <p class="achievement-desc">Second Runner Up - Critical Thinking.</p>
+                    </div>
+
+                </div>
+                <button class="scroll-btn right-btn">→</button>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section fade-in-section">
+            <h3 class="section-title">Get In Touch</h3>
+            <div class="section-content contact-container">
+                <p class="contact-text">I'm currently looking for new opportunities. Whether you have a question or just
+                    want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-links">
+                    <a href="mailto:ghosh1shruti958@gmail.com" class="btn btn-primary">Email me!</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/shruti-ghosh958/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/shruti-ghoshhhh" target="_blank">GitHub</a>
+                </div>
+                <!-- Contact info details for footer -->
+                <p class="footer-details">ghosh1shruti958@gmail.com | +91-8274809586</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>Built intentionally by Shruti Ghosh.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
